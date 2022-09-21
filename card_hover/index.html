@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <title>Card Hover</title>
+  <meta
+    name="description"
+    content=""
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+  >
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="content">
+        <h2>01</h2>
+        <h3>Card One</h3>
+        <p>
+          Aspernatur cumque sed quia ab dignissimos quisquam. Est magnam atque labore porro dolor alias consectetur
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>02</h2>
+        <h3>Card Two</h3>
+        <p>
+          Aspernatur cumque sed quia ab dignissimos quisquam. Est magnam atque labore porro dolor alias consectetur
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>03</h2>
+        <h3>Card Three</h3>
+        <p>
+          Aspernatur cumque sed quia ab dignissimos quisquam. Est magnam atque labore porro dolor alias consectetur
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <script src="vanilla-tilt1.7.2.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".card"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1
+    });
+  </script>
+</body>
+
+</html>
